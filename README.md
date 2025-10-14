@@ -22,10 +22,13 @@
 <!-- Edit the following section with your reflection -->
 
 #### What went well?
+Finding out what questions were best to use
 #### What did not go well?
+Just not being able to commit properly but found out how
 #### What did you learn?
+How to find data sources. Based on those data sources, what can you analayze and find the conculsion.
 #### What would you do differently next time?
-
+Learn how to commit changes. 
 ---
 
 ## Getting Started
