@@ -36,7 +36,7 @@ Learn how to commit changes.
 
 To ensure that you have all the dependencies installed, and that we can have a reproducible environment, we will be using `pipenv` to manage our dependencies. `pipenv` is a tool that allows us to create a virtual environment for our project, and install all the dependencies we need for our project. This ensures that we can have a reproducible environment, and that we can all run the same code.
 
-```bash
+```bashgitg
 pipenv install
 ```
 
