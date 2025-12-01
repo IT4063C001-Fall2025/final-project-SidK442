@@ -57,3 +57,19 @@ This will update update the `Pipfile` and `Pipfile.lock` files, and install the 
 ## Helpful Resources:
 * [Markdown Syntax Cheatsheet](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [Dataset options](https://it4063c.github.io/guides/datasets)
+
+Machine Learning Plan
+
+I am planning on using Linear Regression. 
+Some challenges I faced last time were not knowing terms used and keep getting errors.
+So I will go back and learn so I don’t make the same mistake again.
+
+Machine Learning Implementation Process
+
+I first downloaded the data
+Processed Data
+Analyzed Data
+Evaluate Data
+
+
+I haven't received feedback
