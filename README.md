@@ -58,18 +58,26 @@ This will update update the `Pipfile` and `Pipfile.lock` files, and install the 
 * [Markdown Syntax Cheatsheet](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [Dataset options](https://it4063c.github.io/guides/datasets)
 
-Machine Learning Plan
+Machine Learning Plan:
 
-I am planning on using Linear Regression. 
-Some challenges I faced last time were not knowing terms used and keep getting errors.
-So I will go back and learn so I don’t make the same mistake again.
+I am planning on using Linear Regression as a Machine Learning Model.
+Some challenges I might come across are:
+1) Not Understanding terms and definintion like what a pipeline is.
+2) Not knowing what to do if I come across some errors.
 
-Machine Learning Implementation Process
-
-I first downloaded the data
-Processed Data
-Analyzed Data
-Evaluate Data
+I plan to address these challenges by:
+1) Understanding terms and defintion and understand how to implement by watching course videos again
+2) And if I do come across some errors, I will use CO-PILOT to correct errors, look through  websites like stack overflow on what I can do to correct these errors and take help from the professor
 
 
-I haven't received feedback
+Machine Learning Implementation Process:
+
+1) First I will find out what answer I will need to find out.
+2) I will then download the data, and upload it.
+3) I will find any missing values and handle some erros if I come across any. 
+4) Then I will process the data. I will train the data set, then I will build a machine learning pipeline
+4) I will then analyze the data by figuring out any patterns and identify it.
+5) Finally I will evaluate by looking for the best model.
+
+
+On previous feedback, I received how I have to make minor refinements in correlation analysis and ML detailing.
