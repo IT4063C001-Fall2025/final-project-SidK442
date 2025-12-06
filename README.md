@@ -81,3 +81,57 @@ Machine Learning Implementation Process:
 
 
 On previous feedback, I received how I have to make minor refinements in correlation analysis and ML detailing.
+
+
+here's the implementation: 
+
+# Python ≥3.10 is required
+import sys
+assert sys.version_info >= (3, 10)
+import numpy as np
+import pandas as pd
+import os
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.linear_model import LinearRegression
+from sklearn.pipeline import make_pipeline
+%matplotlib inline
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import seaborn as sns
+mpl.rc('axes', labelsize=14)
+mpl.rc('xtick', labelsize=12)
+mpl.rc('ytick', labelsize=12)
+plt.style.use("bmh")
+
+np.random.seed(42)
+
+# 1. Load the data
+# example from previous assignment 
+diabetes = pd.read_csv('data/diabetes.csv')
+
+# 2. Handle missing values
+diabetes = diabetes.dropna()  
+
+# 3. Prepare features (X) and target (y)
+X = diabetes[[......]]
+y = diabetes[....]  
+
+# 4. Split data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(....)
+
+# 5. Build a machine learning pipeline
+pipeline = Pipeline(....)
+
+# 6. Train the model
+pipeline.fit(......)
+
+# 7. Make predictions
+y_pred 
+
+# 8. Evaluate the model
+
+
+# 9. Analyze 
+
+
+
