@@ -86,67 +86,31 @@ On previous feedback, I received how I have to make minor refinements in correla
 here's the implementation: 
 
 # 1. Load the data
-spotify_data = pd.read_csv('data/track_data_final.csv')
+# example from previous assignment 
+diabetes = pd.read_csv('data/diabetes.csv')
 
 # 2. Handle missing values
-machine_learning_data = spotify_data[['track_popularity', 'artist_popularity', 'artist_followers', 
-                      'track_duration_ms', 'explicit', 'album_total_tracks', 
-                      'album_type', 'track_age']].copy()
-machine_learning_data = machine_learning_data.dropna()
+diabetes = diabetes.dropna()  
 
 # 3. Prepare features (X) and target (y)
-X = machine_learning_data.drop('track_popularity', axis=1)
-y = machine_learning_data['track_popularity']
+X = diabetes[[......]]
+y = diabetes[....]  
 
 # 4. Split data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(....)
 
 # 5. Build a machine learning pipeline
-numeric_features = ['artist_popularity', 'artist_followers', 'track_duration_ms', 
-                    'album_total_tracks', 'track_age']
-categorical_features = ['explicit', 'album_type']
-
-numeric_pipeline = Pipeline([
-    ('imputer', SimpleImputer(strategy='median')),
-    ('scaler', StandardScaler())
-])
-
-categorical_pipeline = Pipeline([
-    ('imputer', SimpleImputer(strategy='constant', fill_value='missing')),
-    ('encoder', OneHotEncoder(drop='first', sparse_output=False))
-])
-
-preprocessor = ColumnTransformer([
-    ('num', numeric_pipeline, numeric_features),
-    ('cat', categorical_pipeline, categorical_features)
-])
-
-pipeline = Pipeline([
-    ('preprocessor', preprocessor),
-    ('regressor', LinearRegression())
-])
+pipeline = Pipeline(....)
 
 # 6. Train the model
-pipeline.fit(X_train, y_train)
+pipeline.fit(......)
 
 # 7. Make predictions
-y_pred = pipeline.predict(X_test)
+
 
 # 8. Evaluate the model
-mse = mean_squared_error(y_test, y_pred)
-rmse = np.sqrt(mse)
-mae = mean_absolute_error(y_test, y_pred)
-r2 = r2_score(y_test, y_pred)
 
-print(f"Mean Squared Error: {mse:.2f}")
-print(f"Root Mean Squared Error: {rmse:.2f}")
-print(f"Mean Absolute Error: {mae:.2f}")
-print(f"R² Score: {r2:.2f}")
 
 # 9. Analyze
-# The model can predict about 27% of a song's popularity (R² ≈ 0.27)
-# Artist popularity is the strongest predictor of track popularity
-# Other factors like explicit content and track age have smaller impacts 
-
 
 
